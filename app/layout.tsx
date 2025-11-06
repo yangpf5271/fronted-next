@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: '现代化员工平台前端',
 };
 
+
 export default function RootLayout({
   children,
 }: {
