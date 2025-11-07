@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev --port 2222",
+    "dev": "next dev --port 8817",
     "build": "next build",
-    "start": "next start --port 2222",
+    "start": "next start --port 8817",
     "lint": "next lint"
   },
   "dependencies": {
