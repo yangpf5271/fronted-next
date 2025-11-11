@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ag-ui/agno':
-        specifier: ^0.0.2
-        version: 0.0.2(rxjs@7.8.1)
+        specifier: ^0.0.3
+        version: 0.0.3(@ag-ui/client@0.0.35)(@ag-ui/core@0.0.37)(rxjs@7.8.1)
       '@copilotkit/react-core':
         specifier: ^1.10.6
         version: 1.10.6(@types/react@18.3.26)(graphql@16.11.0)(react-dom@18.3.1(react@19.2.0))(react@19.2.0)
@@ -95,9 +95,11 @@ packages:
       graphql:
         optional: true
 
-  '@ag-ui/agno@0.0.2':
-    resolution: {integrity: sha512-S29dYoAFAul1DdCdM2u0X9a+cVK0ICKrxv6t37PaP6v32qFt3qRn1lrasC3lkMmrWAX/NsF0ht7f5crjwWNUjQ==}
+  '@ag-ui/agno@0.0.3':
+    resolution: {integrity: sha512-LjuEJIfc+PGBpPxCxwK+hhMoSiqdhOcOkDusApuysglxhadlXmfIl+ycIs2io5sndeZevV3L9xHFkEgmnjE39Q==}
     peerDependencies:
+      '@ag-ui/client': '>=0.0.37'
+      '@ag-ui/core': '>=0.0.37'
       rxjs: 7.8.1
 
   '@ag-ui/client@0.0.35':
@@ -4332,9 +4334,10 @@ snapshots:
     optionalDependencies:
       graphql: 16.11.0
 
-  '@ag-ui/agno@0.0.2(rxjs@7.8.1)':
+  '@ag-ui/agno@0.0.3(@ag-ui/client@0.0.35)(@ag-ui/core@0.0.37)(rxjs@7.8.1)':
     dependencies:
       '@ag-ui/client': 0.0.35
+      '@ag-ui/core': 0.0.37
       rxjs: 7.8.1
 
   '@ag-ui/client@0.0.35':
