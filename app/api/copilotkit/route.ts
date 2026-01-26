@@ -35,10 +35,18 @@ const serviceAdapter = new ExperimentalEmptyAdapter();
 
 // 2. 创建 runtime 的工厂函数，避免状态污染
 function createRuntime() {
+    // 从环境变量获取后端 URL，支持 Docker 容器间通信
+    // 开发环境: http://localhost:8815
+    // Docker 环境: http://ep-backend:8815 (使用容器服务名)
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8815";
+    const agentUrl = `${backendUrl}/agui`;
+
+    console.log('[CopilotRuntime] Agent URL:', agentUrl);
+
     return new CopilotRuntime({
         agents: {
             // Our FastAPI endpoint URL
-            "agno_agent": new AgnoAgent({ url: "http://localhost:8815/agui" }),
+            "agno_agent": new AgnoAgent({ url: agentUrl }),
         }
     });
 }

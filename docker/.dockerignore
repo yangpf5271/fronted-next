@@ -1,0 +1,7 @@
+.git/
+.idea/
+Dockerfile
+__pycache__/
+../README.md
+../.gitignore
+../.gitmodules
