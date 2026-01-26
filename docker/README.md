@@ -9,7 +9,7 @@
 
 >构建镜像
 >```shell
->docker build -t ep-frontend-next:latest -f docker/Dockerfile .
+>docker build -t ep-frontend-next:latest  -o type=docker  -f docker/Dockerfile .
 >```
 
 >推送至离线仓库
